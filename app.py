@@ -9,11 +9,12 @@ classifier = pickle.load(open('clf.pkl','rb'))
 @app.route('/', methods=['GET','POST'])
 def home():
   if request.method == 'POST':
-    input_text = request.form['news_text']
-    input_vec = vectorizer.transform([input_text])
-    input_clf = classifier.predict(input_vec)
+    #input_text = request.form['news_text']
+    #input_vec = vectorizer.transform([input_text])
+    #input_clf = classifier.predict(input_vec)
+    input_text = "Hello"
 
-return render_template('home.html')
+return render_template('home.html',news_text= input_text)
 
 if __name__ == '__main__':
   app.run()
