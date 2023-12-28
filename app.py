@@ -1,4 +1,4 @@
-from flask import Flask, requent, render_template
+from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
@@ -8,11 +8,11 @@ classifier = pickle.load(open('clf.pkl','rb'))
 
 @app.route('/', methods=['GET','POST'])
 def home():
-  if request.method == 'POST':
+  #if request.method == 'POST':
     #input_text = request.form['news_text']
     #input_vec = vectorizer.transform([input_text])
     #input_clf = classifier.predict(input_vec)
-    input_text = "Hello"
+  input_text = "Hello"
 
   return render_template('home.html',news_text= input_text)
 
