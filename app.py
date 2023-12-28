@@ -14,7 +14,7 @@ def home():
     #input_clf = classifier.predict(input_vec)
     input_text = "Hello"
 
-return render_template('home.html',news_text= input_text)
+  return render_template('home.html',news_text= input_text)
 
 if __name__ == '__main__':
   app.run()
