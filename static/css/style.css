@@ -38,14 +38,14 @@ div.button {
     justify-content: space-between;
     }
     
-button#submit:hover{
+button[type='submit']:hover{
     background-color: #00AA00;
     border: 1px solid #005500;
     color: #005500;
     cursor: pointer;
     }
     
-button#clear:hover{
+button[type='button']:hover{
     background-color: #CC0000;
     border: 1px solid #330000;
     color: #330000;
