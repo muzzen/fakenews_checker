@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Fake News Checker</title>
+
+    <link rel="stylesheet" type= "text/css" href="/static/css/style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <script type="text/javascript" src="{{url_for('static', filename='javascript.js')}}"></script>
   </head>
   <body>
-    {{ news_text }}
+    {% if input_text %}
+    <div class="{{input_text}}">
+      
+    </div>
+      
   </body>
 </html>
