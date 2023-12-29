@@ -17,6 +17,7 @@ textarea {
     resize: none;
     height: 250px;
     width: 590px;
+    box-sizing: border-box;
     }
     
 textarea:focus{
