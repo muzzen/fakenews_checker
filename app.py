@@ -13,7 +13,8 @@ def home():
     input_vec = vectorizer.transform([input_text])
     input_clf = classifier.predict(input_vec)
     return render_template("home.html", input_text = input_clf[0])
-  return render_template('home.html')
+  else:
+    return render_template('home.html')
 
 if __name__ == '__main__':
   app.run()
