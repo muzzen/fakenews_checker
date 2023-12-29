@@ -12,8 +12,21 @@
   <body>
     {% if input_text %}
     <div class="{{input_text}}">
-      
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <p>The content consider as part of a <strong>{{ input_text }}</strong> news.</p>
     </div>
+    {% endif %}
+    <br>
+    <img src="/static/images/logo.png"></img><br>&nbsp;
+    <form method="post">
+      <div>
+        <textarea name="news_text"></textarea>
+      </div>
+      <div>
+        <button type="submit"><i class="fa fa-search" style="font-size:24px"></i></button>
+        <button type="button"><i class="fa fa-terminal" style="font-size:24px; transform:scale(-1,1)"></i></button>
+      </div>
+    </form>
       
   </body>
 </html>
