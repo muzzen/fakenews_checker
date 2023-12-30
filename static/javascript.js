@@ -10,3 +10,8 @@ function validSubmission(){
   }
   return true;
 } 
+
+function hideMsg(){
+  var msgBox = document.getElementById('msgbox');
+  msgBox.classList.add('hide');
+}

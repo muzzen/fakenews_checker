@@ -2,17 +2,14 @@
 <html lang="en">
   <head>
     <title>Fake News Checker</title>
-
-    <link rel="stylesheet" type= "text/css" href="/static/css/style.css">
-    </link>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    </link>
+    <link rel="stylesheet" type= "text/css" href="/static/css/style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"> </link>
     <script type="text/javascript" src="{{url_for('static', filename='javascript.js')}}"></script>
   </head>
   <body>
     {% if input_text %}
-    <div class="{{input_text}}">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="{{input_text}}" id="'msgbox">
+      <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
       <p>The content consider as part of a <strong>{{ input_text }}</strong> news.</p>
     </div>
     {% endif %}
